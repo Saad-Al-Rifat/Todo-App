@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+  }
+  nav {
+    width: 100vw;
+    padding: 35px 0px;
+    background-color: #2b2d42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  nav > div {
+    height: 35px;
+    width: 50vw;
+    display: flex;
+  }
+  nav input {
+    padding: 5px;
+    height: 100%;
+    width: 80%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  nav button {
+    padding: 5px;
+    height: 100%;
+    width: 20%;
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 300ms;
+  }
+  nav input:focus {
+    outline: none;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+    align-items: start;
+    gap: 10px;
+    width: fit-content;
+    margin: auto;
+  }
+  main > div {
+    height: fit-content;
+    width: 350px;
+    background: #e5e5e5;
+    border: none;
+    padding: 15px 10px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  
+  .button-1 {
+    appearance: none;
+    background-color: #fafbfc;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+      rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 1.03rem;
+  }
+  /* Footer Styles */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100vw;
+    margin-top: 10px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 576px) {
+    nav{
+      padding: 20px 0px;
+      margin-bottom: 25px;
+    }
+    nav > div {
+      width: 80vw;
+    }
+    nav input {
+      outline: none;
+      width: 80%;
+      margin-left: 0px;
+    }
+    nav input:focus {
+      outline: none;
+      width: 80%;
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      place-items: center;
+      gap: 0px;
+      row-gap: 25px;
+    }
+    .footer {
+    margin-top: 25px;
+  }
+    .footer-links a:hover {
+      text-decoration: none;
+    }
+    .footer-links a {
+      text-decoration: underline;
+    }
+  }
+  
