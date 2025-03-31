@@ -68,3 +68,10 @@ document.getElementById("task-input").addEventListener("keydown", (e)=>{
     document.getElementById("task-input").blur()
   }
 })
+
+// type / to jump on the add task section
+document.body.addEventListener('keyup', e => {
+  if(e.key === '/'){
+    document.getElementById("task-input").focus()
+  }
+})
